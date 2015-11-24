@@ -120,12 +120,24 @@ footer {
 
 /* Responsive Styling */
 @media (max-width: 1199px) {
+    .jumbotron {
+    background-attachment: fixed;
+  }
+  #get-involved {
+    background-attachment: fixed;
+  }
   .jumbotron h1 {
     font-size: 56px;
     padding: 30px;
    }
 }
 @media (max-width: 991px) {
+    .jumbotron {
+    background-attachment: fixed;
+  }
+  #get-involved {
+    background-attachment: fixed;
+  }
   .jumbotron h1 {
     font-size: 44px;
    }
