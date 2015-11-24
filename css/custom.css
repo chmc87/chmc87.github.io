@@ -140,7 +140,12 @@ footer {
    }
 }
 @media (max-width: 767px) {
-
+  .jumbotron {
+  background-image: url('../Images/hero_image_small.jpg');
+   }
+ #getinvolved {
+    background-image: url('../Images/hero_image_small.jpg');
+  }
   .jumbotron h1 {
     font-size: 24px;
    }
@@ -156,7 +161,7 @@ footer {
    }
   footer img {
     width: 50%;
-   }
+   } 
 }
    
 
