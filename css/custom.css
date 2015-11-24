@@ -138,6 +138,12 @@ footer {
    }
 }
 @media (max-width: 767px) {
+  .jumbotron {
+    background-attachment: fixed;
+  }
+  #get-involved {
+    background-attachment: fixed;
+  }
   .jumbotron h1 {
     font-size: 24px;
    }
