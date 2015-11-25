@@ -119,12 +119,19 @@ footer {
 }
 
 .author {
-    color: #f74c3c;
-    font-family: 'Arvo', courier, serif;
-    font-size:15px;
     background-color: #f5f5f5;
     padding-top: 110px;
     padding-bottom: 30px;
+}
+
+.author .container {
+  margin-left: 10px;
+}
+
+.author h1 {
+    font-size:17px;
+    color: #f74c3c;
+    font-family: 'Arvo', courier, serif;
 }
 
 .near-bottom {
