@@ -1,7 +1,9 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
-  height:100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 ul.nav, .jumbotron h1 {
@@ -17,13 +19,13 @@ footer {
 	background-color: #f74c3c;
 	padding-top: 100px;
 	padding-bottom: 30px;
+  position: relative;
 }
 
 #get-involved {
-    min-height: 400px;
-    background: transparent;
-	
-}
+  min-height: 400px;
+  background: transparent;
+  }
 
 #get-involved p {
   color: #f5f5f5;
@@ -43,35 +45,72 @@ footer {
   color: #f5f5f5;
 }
 
+#hr-white {
+  border-top: 1px solid #f5f5f5;
+  width: 160px;
+  margin-top: 15px;
+}
+
 #who {
   background-color: #FBF8F8;
 }
 
+#back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right:20px;
+}
 
-  .jumbotron {
-    text-align: center;
-    color: #f5f5f5;
-    margin-bottom: 0px;
-    min-height: 400px;
-    background: transparent;
-    }
+#back-to-top a  {
+  color: #333;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #f5f5f5;
+  margin-bottom: 0px;
+  min-height: 400px;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  }
 
 
-    .jumbotron h1{
-    	margin-top: 0px;
+.jumbotron h1 {
+  margin-bottom: 20px;
+  padding-top: 0px;
+  }
 
-    	 }
+.jumbotron p {
+	font-weight: 100;
+	padding: 0px 50px 40px 50px;
+	} 
 
-    .jumbotron p {
-    	margin-bottom: 25px; 
-    	font-weight: 100;
-    	padding:0 50px;
-    	} 
+.btn-lg {
+	font-size: 26px;
+}
 
-    .btn-lg {
-    	font-size: 26px;
-    }
+.modal-dialog {
+  margin-top: 100px;
+}
 
+.modal-content iframe {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.modal-content button.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: white;
+  font-size: 28px;
+  width: 30px;
+  opacity: 1;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+}
 
 .homepage { 
 	text-align: center;
@@ -80,23 +119,23 @@ footer {
 }
 
 .homepage h2, .homepage h3 {
-		  color: #e74c3c;
-    	font-family: 'Arvo', courier, serif;
-    	text-transform: uppercase;
+  color: #e74c3c;
+	font-family: 'Arvo', courier, serif;
+	text-transform: uppercase;
 }
   
 .homepage h2 {
-		font-size: 30px;
+	font-size: 30px;
   
 }
     
 .homepage h3 {
-	    font-size: 26px;
+    font-size: 26px;
 }
 
 .homepage p {
-		font-size: 21px;
-		font-weight: 300;
+	font-size: 21px;
+	font-weight: 300;
 }
 
 .homepage a {
@@ -113,16 +152,10 @@ footer {
 	margin-top: 15px;
 }
 
-#hr-white {
-  border-top: 1px solid #f5f5f5;
-  width: 160px;
-  margin-top: 15px;
-}
-
 .author {
-    background-color: #f5f5f5;
-    padding-top: 110px;
-    padding-bottom: 30px;
+  background-color: #f5f5f5;
+  padding-top: 110px;
+  padding-bottom: 30px;
 }
 
 .author .container {
@@ -130,28 +163,31 @@ footer {
 }
 
 .author h1 {
-    font-size:16px;
-    color: #f74c3c;
-    font-family: 'Arvo', courier, serif;
+  font-size:16px;
+  color: #f74c3c;
+  font-family: 'Arvo', courier, serif;
 }
 
 .near-bottom {
-    text-align: center;
-    color: #f5f5f5;
-    height: 600px;
-    margin-bottom: 0px;
-    min-height: 400px;
-    background: transparent;
+  text-align: center;
+  color: #f5f5f5;
+  height: 600px;
+  margin-bottom: 0px;
+  min-height: 400px;
+  background: transparent;
+  height: 100%;
 }
 
 .bottom {
-    text-align: center;
-    color: #f5f5f5;
-    height: 600px;
-    margin-bottom: 0px;
-    min-height: 400px;
-    background: transparent;
+  text-align: center;
+  color: #f5f5f5;
+  height: 600px;
+  margin-bottom: 0px;
+  min-height: 400px;
+  background: transparent;
+  height: 100%;
 }
+
 
 /* Responsive Styling */
 @media (max-width: 1199px) {
@@ -176,9 +212,9 @@ footer {
 }
 @media (max-width: 767px) {
   .jumbotron {
-  background-image: url('../Images/hero_image_small.jpg');
+    background-image: url('../Images/hero_image_small.jpg');
    }
- #getinvolved {
+  #getinvolved {
     background-image: url('../Images/hero_image_small.jpg');
   }
   .jumbotron h1 {
