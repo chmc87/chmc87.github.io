@@ -112,6 +112,14 @@ footer {
   -moz-border-radius: 24px;
 }
 
+.modal-dialog {
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -173px;
+}
+
 .homepage { 
 	text-align: center;
 	padding-top: 30px;
